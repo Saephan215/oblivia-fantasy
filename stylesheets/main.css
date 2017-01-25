@@ -1,9 +1,24 @@
 /*Modules and Variables*/
+/* Used for CSS that is commonly used*/
 /* Font weights */
 /* Base Font */
 /* Fixed Font */
 /* Headings */
 /* Partials */
+#contact-form button[type="submit"] {
+  float: right;
+  cursor: pointer;
+  width: 100px;
+  border: none;
+  background: #991D57;
+  background-image: linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
+  background-image: -moz-linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
+  background-image: -webkit-linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  border-radius: 5px; }
+
 * {
   box-sizing: border-box; }
 
@@ -104,7 +119,34 @@ body{
 .navbar a:hover {
   color: #fff; }
 
+/* Styles the inputs on the contact form*/
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form textarea {
+  width: 100%;
+  box-shadow: inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+  -webkit-box-shadow: inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+  -moz-box-shadow: inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+  border: 1px solid #CCC;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  border-radius: 5px; }
+
+#contact-section {
+  position: relative; }
+
+#contact-section {
+  height: 450px;
+  width: 450px;
+  padding: 25px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
 body, html {
-  margin: 0; }
+  margin: 0;
+  padding-top: 70px; }
 
 /*# sourceMappingURL=main.css.map */
