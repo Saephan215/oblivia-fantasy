@@ -1,8 +1,29 @@
+// This function is used to scroll the playlist left and right on arrow created on the video scss file
+
+$(document).ready(function() {
+	$(".arrow-right").bind("click", function (event) {
+		event.preventDefault();
+		$(".vid-list-container").stop().animate({
+			scrollLeft: "+=336"
+		}, 750);
+	});
+
+	$(".arrow-left").bind("click", function(event) {
+		event.preventDefault();
+		$(".vid-list-container").stop().animate({
+			scrollLeft: "-=336"
+		}, 750);
+	});
+});
+
+
+/* This function tests the contact form inputs to see if the current browswer supports a functionality
+of CSS. It also changes the submit button after submitting the form */
 (function() {
  //Creating an input element for testing
 var input = document.createElement('input');
 
-// Create the supports object
+// Create the Supports object
 var supports = {};
 
 
@@ -27,7 +48,7 @@ if(!supports.placeholder) {
 
 //Change text inside send button on submit
 
-var send = document.getElementId('contact-submit');
+var send = document.getElementById('contact-submit');
 if (send) {
 	send.onclick = function () {
 		this.innerHTML = "...Sending";

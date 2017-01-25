@@ -6,16 +6,17 @@
 
 	<meta charset="utf-8">
 
+	
 	<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
-
+	<script src="node_modules/jquery/dist/jquery.js"></script>
 	<script type="text/javascript" src="javascript.js"></script>
-	<script src="node_modules/jquery/dist/jquery-3.1.1.js"></script>
 
 
 
 </head>
 <body>
 
+	<!-- Navbar -->
 	<div class="navbar-section"> 
 		<ul class="navbar">
 			<li> <a href="contact.html"> CONTACT </a></li>
@@ -23,6 +24,36 @@
 			<li> <a href="characters.html"> CHARACTERS </a></li>
 		</ul> 
 	</div>
+
+	<div class="video-player-section">
+	<!-- video Player -->
+	<div class="vid-container">
+		<iframe id="vid_frame" src="http://www.youtube.com/embed/s1YjVNdJzkE?rel=0&showinfo=0&autohide=1" width="560" height="315" frameborder="0"></iframe>
+	</div>
+
+	<!-- Thumbnail and onClick function which will play the video upon clicking thumbnail -->
+	<div class="vid-list-container">
+		<div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/s1YjVNdJzkE?autoplay=1&rel=0&showinfo=0&autohide=1'">
+			<div class="thumb">
+				<img src="http://img.youtube.com/vi/s1YjVNdJzkE/1.jpg" alt="" />
+			</div>
+			<div class="desc">
+				Oblivia Fantasy - Episode 1
+			</div>
+		</div>
+	</div>
+	
+	<!-- Arrows to scroll through gallery -->
+	<div class="arrows">
+		<div class="arrow-left">
+			<i class="fa fa-chevron-left fa-lg"></i>
+		</div>
+		<div class="arrow-right">
+			<i class="fa fa-chevron-right fa-lg"></i>
+		</div>
+	</div>
+	<div>
+
 
 </body>
 </html>
