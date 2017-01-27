@@ -16,6 +16,23 @@ $(document).ready(function() {
 	});
 });
 
+/* This function is used to creating alternating div colors*/
+
+$(document).ready(function(){ //Find out how to run script after 
+
+
+	var section = document.getElementsByClassName("general-section");
+
+		for(var i=0;i<section.length;i++) {
+
+		  section[i].classList.add(i % 2 === 0 ? "even" : "odd");
+
+	}
+
+});
+
+
+
 
 /* This function tests the contact form inputs to see if the current browswer supports a functionality
 of CSS. It also changes the submit button after submitting the form */

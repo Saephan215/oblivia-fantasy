@@ -20,16 +20,10 @@
   padding: 10px;
   border-radius: 5px; }
 
-* {
-  box-sizing: border-box; }
-
 /*
-body{
-	width: 100%;
-	min-width: 320px;
-	max-width: 1200px;
-	margin: 0 auto;
-}
+
+*{box-sizing: border-box;}
+
 */
 /* Creates the space for the row and floats to the left*/
 .row {
@@ -143,6 +137,18 @@ body{
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box; }
+
+.general-section {
+  position: relative;
+  height: 350px;
+  width: 100%;
+  top: -70px; }
+
+.even {
+  background-color: green; }
+
+.odd {
+  background-color: black; }
 
 .video-player-section {
   position: relative;
