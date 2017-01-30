@@ -140,7 +140,7 @@
 
 .general-section {
   position: relative;
-  height: 350px;
+  height: 325px;
   width: 100%;
   top: -70px; }
 
@@ -149,6 +149,10 @@
 
 .odd {
   background-color: black; }
+
+.character-info {
+  position: relative;
+  width: 65%; }
 
 .video-player-section {
   position: relative;
@@ -2569,6 +2573,7 @@
 
 body, html {
   margin: 0;
-  padding-top: 70px; }
+  padding-top: 70px;
+  height: 100%; }
 
 /*# sourceMappingURL=main.css.map */

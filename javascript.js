@@ -18,7 +18,7 @@ $(document).ready(function() {
 
 /* This function is used to creating alternating div colors*/
 
-$(document).ready(function(){ //Find out how to run script after 
+window.onload = function() {//Find out how to run script after 
 
 
 	var section = document.getElementsByClassName("general-section");
@@ -29,7 +29,7 @@ $(document).ready(function(){ //Find out how to run script after
 
 	}
 
-});
+};
 
 
 
